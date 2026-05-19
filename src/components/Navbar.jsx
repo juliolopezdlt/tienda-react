@@ -12,8 +12,10 @@ function Navbar({ carrito, usuario, setUsuario }) {
         //VA CAMBIANDO EL VALOR DE SET USUARIO SEGUN LO Q PULSE
         <button onClick={() => setUsuario(null)}>Cerrar sesión</button>
       ) : (
-        //SI NO EXISTE MUESTRA LOGIN
-        <Link to="/Login">Login</Link>
+        <>
+          <Link to="/login">Login</Link>
+          <Link to="/registro">Registro</Link>
+        </>
       )}
     </nav>
   );
